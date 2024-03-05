@@ -127,17 +127,10 @@
                         "Content-Type": "application/json"
                     }
                 })
-                .then(function(response) {
-                if (response.ok) {
+                .then(function() {
                     // If form submission is successful, redirect to offer page
                     window.location.href = "https://example.com/offer-page?email=" + encodeURIComponent(email);
-                } else {
-                    // Handle error
-                    console.error("Form submission failed:", response.statusText);
-                }
-          
             })
-            
                 .catch(function(error) {
                     console.error("Error:", error);
                 });
