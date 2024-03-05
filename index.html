@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/391827d54c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dog Furniture Emporium - Premium Comfort for Your Furry Friends</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img class="logo" src="./Assets/dog_furniture_logo.png" alt="Dog Furniture Emporium">
+            <div>
+                <button class="lang-btn"><i class="fa-solid fa-globe"></i> English <img src="./Assets/down-icon.png"></button>
+                <button>Sign In</button>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1>Premium Comfort for Your Furry Friends</h1>
+            <h3>Elevate Your Dog's Lifestyle with Our Exclusive Furniture</h3>
+            <p>Ready to upgrade your dog's living space? Enter your email to receive exclusive offers and updates.</p>
+            <form action="#" class="email-signup">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Get Started</button>
+            </form>
+            <div class="how-to-win">
+                <h2>How to Win</h2>
+                <p>1. Sign up with your email to receive exclusive offers and updates.</p>
+                <p>2. Click on the Get Started button to enter our contest and stand a chance to win exciting prizes!</p>
+                <p>3. Complete the required actions in the CPA offer to qualify for the contest.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Luxurious Designs</h2>
+                <p>Elevate your home decor with our stylish and comfortable dog furniture pieces.</p>
+            </div>
+            <div class="img-col">
+                <img src="./Assets/11.webp" alt="Luxury Dog Bed">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="./Assets/12.jpeg" alt="Outdoor Dog Furniture Set">
+            </div>
+            <div class="text-col">
+                <h2>Outdoor Durability</h2>
+                <p>Explore our durable outdoor furniture sets, designed to withstand any weather conditions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What types of dog furniture do you offer?</label>
+                <div class="content">
+                    <p>We offer a wide range of dog furniture including beds, sofas, outdoor sets, carriers, and more.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">Are your products suitable for all dog sizes?</label>
+                <div class="content">
+                    <p>Yes, our furniture comes in various sizes to accommodate small, medium, and large dogs.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Do you offer customizable options?</label>
+                <div class="content">
+                    <p>Absolutely! We provide customizable options to tailor the furniture to your dog's preferences and your home decor.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">What materials are used in your products?</label>
+                <div class="content">
+                    <p>We use high-quality, pet-safe materials to ensure durability and comfort for your furry friends.</p>
+                </div>
+            </li>
+        </ul>
+
+        <small>Ready to upgrade your dog's comfort? Enter your email to receive exclusive offers and updates.</small>
+
+        <form action="#" class="email-signup">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Get Started</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <h2>Questions? Call 000-000-000-0000</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="col">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <button class="lang-btn"><i class="fa-solid fa-globe"></i> English <img src="./Assets/down-icon.png"></button>
+
+        <p class="copyright-text">Dog Furniture Emporium</p>
+    </div>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent form submission
+            var email = document.getElementById("emailInput").value; // Get user's email
+            // Redirect the user to the CPA offer URL with the email data
+            window.location.href = "https://www.google.com/?email=" + encodeURIComponent(email);
+        }
+    </script>
+</body>
+</html> 
