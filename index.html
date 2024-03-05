@@ -125,7 +125,8 @@
             document.getElementById("emailForm").addEventListener("submit", function(event) {
                 event.preventDefault(); // Prevent default form submission
                 var email = document.getElementById("emailInput").value; // Get email input value
-    
+
+                if (validateEmail(email)) {
                 // Submit form data using Fetch API
                 fetch("https://send.pageclip.co/Ssw0iKtDIUYfqQAFLTPHkdVxD0kqVB8p/f", {
                     method: "POST",
