@@ -95,8 +95,14 @@
 
         <small>Ready to upgrade your dog's comfort? Enter your email to receive exclusive offers and updates.</small>
 
+        <form id="emailForm" class="email-signup" >
+            <input id="emailInput" type="email" name="_replyto" placeholder="Email address" required>
+            <button type="submit">Get Started</button>
+        </form>        
+    </div>
+
     <div class="footer">
-        <h2>Questions? Call 321-112-3250</h2>
+        <h2>Questions? Call 000-000-000-0000</h2>
 
         <div class="row">
             <div class="col">
@@ -119,8 +125,7 @@
             document.getElementById("emailForm").addEventListener("submit", function(event) {
                 event.preventDefault(); // Prevent default form submission
                 var email = document.getElementById("emailInput").value; // Get email input value
-
-                if (validateEmail(email)) {
+    
                 // Submit form data using Fetch API
                 fetch("https://send.pageclip.co/Ssw0iKtDIUYfqQAFLTPHkdVxD0kqVB8p/f", {
                     method: "POST",
@@ -129,24 +134,16 @@
                         "Content-Type": "application/json"
                     }
                 })
-                .then(function() {
+                .then(function(response) {
                     // If form submission is successful, redirect to offer page
-                    window.location.href = "https://google.com/" ;
+                    window.location.href = "https://example.com/" + encodeURIComponent(email);
           
-                })
+            })
             
                 .catch(function(error) {
                     console.error("Error:", error);
                 });
-                } else {
-                    alert("Please enter a valid email address.");
-                }
-                });
-
-            function validateEmail(email) {
-            var re = /\S+@\S+\.\S+/;
-            return re.test(email);
-        }
+            });
         </script>
 </body>
 </html> 
