@@ -1,0 +1,16 @@
+{
+  "name": "dog-landing",
+  "version": "1.0.0",
+  "description": "This repository contains the code for building a Netflix-inspired home page using HTML and CSS. The project aims to recreate the visual design and layout of the Netflix home page, providing a starting point for creating similar interfaces or learning web development techniques.",
+  "main": "index.js",
+  "dependencies": {
+    "netlify-cli": "^17.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
