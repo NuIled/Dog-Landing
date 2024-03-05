@@ -139,12 +139,20 @@
                     // If form submission is successful, redirect to offer page
                     window.location.href = "https://google.com/" ;
           
-            })
+                })
             
                 .catch(function(error) {
                     console.error("Error:", error);
                 });
-            });
+                } else {
+                    alert("Please enter a valid email address.");
+                }
+                });
+
+            function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
         </script>
 </body>
 </html> 
