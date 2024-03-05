@@ -35,9 +35,18 @@
                 <p>2. Click on the Get Started button to enter our contest and stand a chance to win exciting prizes!</p>
                 <p>3. Complete the required actions in the CPA offer to qualify for the contest.</p>
             </div>
+            <div class="offer-button">
+                <button id="offerButton">Explore Offers</button>
+            </div>
         </div>
     </div>
-
+    <script>
+        // Function to handle button click and redirection
+        document.getElementById("offerButton").addEventListener("click", function() {
+            // Redirect to the offer page
+            window.location.href = "https://google.com/offer-page";
+        });
+    </script>
     <div class="features">
         <div class="row">
             <div class="text-col">
@@ -132,16 +141,6 @@
                     body: JSON.stringify({ email: email }),
                     headers: {
                         "Content-Type": "application/json"
-                    }
-                    window.location.href = "https://pageclip.co/";
-                })
-                .then(function(response) {
-                    if (response.ok) {
-                        window.location.href = "https://pageclip.co/";
-                        // If form submission is successful, redirect to offer page
-                    } else {
-                        // Handle error
-                        console.error("Form submission failed:", response.statusText);
                     }
                 })
                 .catch(function(error) {
