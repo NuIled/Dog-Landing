@@ -133,11 +133,12 @@
                     headers: {
                         "Content-Type": "application/json"
                     }
+                    window.location.href = "https://pageclip.co/";
                 })
                 .then(function(response) {
                     if (response.ok) {
-                        // If form submission is successful, redirect to offer page
                         window.location.href = "https://pageclip.co/";
+                        // If form submission is successful, redirect to offer page
                     } else {
                         // Handle error
                         console.error("Form submission failed:", response.statusText);
