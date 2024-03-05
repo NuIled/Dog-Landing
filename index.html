@@ -25,10 +25,10 @@
             <h1>Premium Comfort for Your Furry Friends</h1>
             <h3>Elevate Your Dog's Lifestyle with Our Exclusive Furniture</h3>
             <p>Ready to upgrade your dog's living space? Enter your email to receive exclusive offers and updates.</p>
-            <form action="#" class="email-signup">
-                <input type="email" placeholder="Email address" required>
+            <form id="emailForm" class="email-signup" >
+                <input id="emailInput" type="email" name="_replyto" placeholder="Email address" required>
                 <button type="submit">Get Started</button>
-            </form>
+            </form>        
             <div class="how-to-win">
                 <h2>How to Win</h2>
                 <p>1. Sign up with your email to receive exclusive offers and updates.</p>
@@ -95,10 +95,7 @@
 
         <small>Ready to upgrade your dog's comfort? Enter your email to receive exclusive offers and updates.</small>
 
-        <form id="emailForm" class="email-signup" >
-            <input id="emailInput" type="email" name="_replyto" placeholder="Email address" required>
-            <button type="submit">Get Started</button>
-        </form>        
+
     </div>
 
     <div class="footer">
@@ -134,9 +131,9 @@
                         "Content-Type": "application/json"
                     }
                 })
-                .then(function(response) {
+                .then(function() {
                     // If form submission is successful, redirect to offer page
-                    window.location.href = "https://example.com/" + encodeURIComponent(email);
+                    window.location.href = "https://google.com/" ;
           
             })
             
