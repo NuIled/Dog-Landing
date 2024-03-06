@@ -45,7 +45,24 @@ nav button {
     margin-left: 10px;
     cursor: pointer;
 }
-
+.nav-button {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block; /* Ensure the button displays as a block element */
+    text-align: center; /* Center the text within the button */
+}
+.nav-button:hover {
+    background-color: #c20001;
+}
 .lang-btn {
     display: inline-flex;
     align-items: center;
